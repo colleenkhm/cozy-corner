@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cozy-corner/static/css/main.160bccee.css",
+    "main.js": "/cozy-corner/static/js/main.13f01455.js",
+    "static/media/colleen-resume-screenshot.png": "/cozy-corner/static/media/colleen-resume-screenshot.ef44c3fc999bea860c12.png",
+    "static/media/colleen-resume.pdf": "/cozy-corner/static/media/colleen-resume.a8773d65fe35ad2592ad.pdf",
+    "index.html": "/cozy-corner/index.html",
+    "main.160bccee.css.map": "/cozy-corner/static/css/main.160bccee.css.map",
+    "main.13f01455.js.map": "/cozy-corner/static/js/main.13f01455.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.160bccee.css",
+    "static/js/main.13f01455.js"
+  ]
+}

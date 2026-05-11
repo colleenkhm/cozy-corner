@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cozy-corner/static/css/main.160bccee.css",
-    "main.js": "/cozy-corner/static/js/main.40ad5ea3.js",
+    "main.js": "/cozy-corner/static/js/main.683ba697.js",
     "static/media/colleen-murray-resume-2026.png": "/cozy-corner/static/media/colleen-murray-resume-2026.7e74296f08dd59da89ba.png",
     "static/media/colleen_resume.pdf": "/cozy-corner/static/media/colleen_resume.3dbc6946ccbc99dee3a9.pdf",
     "index.html": "/cozy-corner/index.html",
     "main.160bccee.css.map": "/cozy-corner/static/css/main.160bccee.css.map",
-    "main.40ad5ea3.js.map": "/cozy-corner/static/js/main.40ad5ea3.js.map"
+    "main.683ba697.js.map": "/cozy-corner/static/js/main.683ba697.js.map"
   },
   "entrypoints": [
     "static/css/main.160bccee.css",
-    "static/js/main.40ad5ea3.js"
+    "static/js/main.683ba697.js"
   ]
 }

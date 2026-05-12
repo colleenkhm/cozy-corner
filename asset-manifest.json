@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/cozy-corner/static/css/main.160bccee.css",
-    "main.js": "/cozy-corner/static/js/main.683ba697.js",
-    "static/media/colleen-murray-resume-2026.png": "/cozy-corner/static/media/colleen-murray-resume-2026.7e74296f08dd59da89ba.png",
-    "static/media/colleen_resume.pdf": "/cozy-corner/static/media/colleen_resume.3dbc6946ccbc99dee3a9.pdf",
+    "main.css": "/cozy-corner/static/css/main.66932019.css",
+    "main.js": "/cozy-corner/static/js/main.c7220b46.js",
+    "static/media/MilliporeSigma.png": "/cozy-corner/static/media/MilliporeSigma.ef761cb15afc190611d5.png",
+    "static/media/colleen-murray-resume-screenshot.png": "/cozy-corner/static/media/colleen-murray-resume-screenshot.650634a8d722434c1ade.png",
+    "static/media/portland.jpeg": "/cozy-corner/static/media/portland.de249842894781112e6b.jpeg",
+    "static/media/colleen-murray-resume-new.pdf": "/cozy-corner/static/media/colleen-murray-resume-new.55159ddd40b909e5a42c.pdf",
+    "static/media/stLouis.jpeg": "/cozy-corner/static/media/stLouis.3e33c7f5390be41b1705.jpeg",
+    "static/media/abideAssay.png": "/cozy-corner/static/media/abideAssay.0d7bb2390d622d391161.png",
+    "static/media/MOGasTaxBack.webp": "/cozy-corner/static/media/MOGasTaxBack.6e9f462c163c8b0bfa04.webp",
     "index.html": "/cozy-corner/index.html",
-    "main.160bccee.css.map": "/cozy-corner/static/css/main.160bccee.css.map",
-    "main.683ba697.js.map": "/cozy-corner/static/js/main.683ba697.js.map"
+    "main.66932019.css.map": "/cozy-corner/static/css/main.66932019.css.map",
+    "main.c7220b46.js.map": "/cozy-corner/static/js/main.c7220b46.js.map"
   },
   "entrypoints": [
-    "static/css/main.160bccee.css",
-    "static/js/main.683ba697.js"
+    "static/css/main.66932019.css",
+    "static/js/main.c7220b46.js"
   ]
 }

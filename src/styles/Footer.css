@@ -1,38 +1,35 @@
 .grid-container {
   padding: 20px 60px;
-  display: table;
 }
 
 .built-using {
   padding: 20px;
 }
 
-.contact-item, .contact-link {
+.contact-item {
   line-height: 30px;
   vertical-align: middle;
-  color: var(--color-text-secondary)
 }
 
-.contact-item:hover, .contact-link:hover {
-  color: var(--color-accent)
-}
+.contact-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 
-.contact-item:visited, .contact-link:visited {
   text-decoration: none;
-  color: var(--color-text-secondary)
+  color: var(--color-text-secondary);
+  transition: color 180ms ease;
+}
+
+.contact-link:hover {
+  color: var(--color-accent)
 }
 
 i {
   line-height: 30px;
-  display: table-cell
-}
-
-.contact-link {
-
-  display: table-cell;
-
 }
 
 #footer {
-  margin-top: 80px;
+  margin-top: 60px;
 }

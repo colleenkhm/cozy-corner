@@ -1,7 +1,7 @@
 import Grid from '@mui/material/Grid'
-import portfolioResume from '../assets/colleen-resume.pdf'
+import portfolioResume from '../assets/colleen-murray-resume-new.pdf'
 import '../styles/Resume.css'
-import resumeScreenshot from '../assets/colleen-resume-screenshot.png'
+import resumeScreenshot from '../assets/colleen-murray-resume-screenshot.png'
 
 function Resume() {
   return (
@@ -10,25 +10,21 @@ function Resume() {
         <Grid container spacing={20}>
           <Grid item xs={12} md={4} className="column">
             <div className="skills" id="technical-skills">
-              <h4>Technical Skills</h4>
-              <div className="list-item">HTML</div>
-              <div className="list-item">CSS</div>
-              <div className="list-item">Material UI</div>
-              <div className="list-item">Bootstrap</div>
-              <div className="list-item">JavaScript</div>
+              <h3>Technical Skills</h3>
               <div className="list-item">React.js</div>
-              <div className="list-item">Express.js</div>
-              <div className="list-item">Handlebars.js</div>
-              <div className="list-item">Node.js</div>
+              <div className="list-item">TypeScript</div>
+              <div className="list-item">JavaScript</div>
               <div className="list-item">GraphQL</div>
               <div className="list-item">Apollo Client</div>
-              <div className="list-item">Git</div>
+              <div className="list-item">Next.js</div>
+              <div className="list-item">Material UI</div>
+              <div className="list-item">Jest</div>
+              <div className="list-item">Playwright</div>
+              <div className="list-item">Node.js</div>
               <div className="list-item">SQL</div>
-              <div className="list-item">MongoDB</div>
-              <div className="list-item">Insomnia</div>
-              <div className="list-item">Jest Testing</div>
-              <div className="list-item">AWS</div>
-              <div className="list-item">Amplify</div>
+              <div className="list-item">Jira</div>
+               <div className="list-item">Postman</div>
+              <div className="list-item">Git</div>
             </div>
           </Grid>
 
@@ -49,16 +45,14 @@ function Resume() {
           </Grid>
           <Grid item xs={12} md={4}>
             <div className="skills" id="soft-skills">
-              <h4>Other Strengths</h4>
-              <div className="list-item">Adaptability</div>
+              <h3>Other Strengths</h3>
+              <div className="list-item">Adaptable</div>
               <div className="list-item">Customer-Focused</div>
-              <div className="list-item">Self-Motivation</div>
-              <div className="list-item">Collaboration</div>
-              <div className="list-item">Leadership</div>
-              <div className="list-item">Education</div>
+              <div className="list-item">Self-Motivated</div>
+              <div className="list-item">Collaborative</div>
+              <div className="list-item">Leadership Experience</div>
               <div className="list-item">Growth Mindset</div>
               <div className="list-item">Empathy</div>
-              <div className="list-item">Translation</div>
             </div>
           </Grid>
         </Grid>

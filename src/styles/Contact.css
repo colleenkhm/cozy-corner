@@ -48,8 +48,8 @@
   }
 
 .submit-btn {
-  background-color: cornflowerblue;
-  color: #fff;
+  background-color: var(--color-heading);
+  color: var(--color-bg);
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
@@ -60,11 +60,11 @@
 }
 
 .submit-btn:hover {
-  background-color: #0056b3;
+  background-color: #047f98;
 }
 
 .errorMessage {
-  color: red;
+  color: var(--color-heading);
   font-size: 14px;
 }
 

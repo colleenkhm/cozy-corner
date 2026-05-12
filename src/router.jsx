@@ -1,12 +1,12 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
 import AppLayout from './AppLayout';
-import Home from './components/Home';
-import About from './components/About';
-import Work from './components/Work';
-import Resume from './components/Resume';
-import Contact from './components/Contact';
+import Home from './routes/Home';
+import About from './routes/About';
+import Work from './routes/Work';
+import Resume from './routes/Resume';
+import Contact from './routes/Contact';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <AppLayout />,
@@ -18,6 +18,9 @@ const router = createBrowserRouter([
       { path: 'contact', element: <Contact /> },
     ],
   },
+  {
+    basename: '/cozy-corner/',
+  }
 ]);
 
 export default router;

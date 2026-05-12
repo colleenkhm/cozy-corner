@@ -1,0 +1,36 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  background-color: #dbe7ff;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  opacity: 0.95;
+}
+
+.project-card-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-card-info {
+  padding: 18px;
+  background-color: var(--color-heading);
+  color: lightgoldenrodyellow;
+}
+
+.project-card-info h4 {
+  margin: 0 0 8px 0;
+}
+
+.project-card-info p {
+  margin: 0;
+}

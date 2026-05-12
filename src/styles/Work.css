@@ -1,62 +1,41 @@
-.section-container {
-  margin: 50px 30px 30px 30px;
-  width: 95%;
-}
 .work-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  margin: 0px 20px;
-  border-radius: 5px;
+  width: 100%;
 }
 
 .flex-item {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  min-height: 320px;
+  border-radius: 12px;
   text-decoration: none;
   color: var(--primary);
-  min-height: 360px;
-  flex-basis: 45%;
-  object-fit: contain;
-  border-radius: 8px;
+  background-color: #dbe7ff;
+  overflow: hidden;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.flex-item:hover {
+  transform: translateY(-4px);
+  opacity: 0.9;
 }
 
 .flex-item div {
+  width: 100%;
   background-color: cornflowerblue;
   color: lightgoldenrodyellow;
-  max-width: 220px;
-  margin-top: 100%;
-  border-radius: 5px;
-  padding: 1px;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
-.work-container:hover {
-  opacity: 50%;
-  text-decoration: none;
-  color: slategray;
+#sigma-aldrich {
+  background-image: url('../assets/MilliporeSigma.png')
 }
 
-/* #work-day-scheduler {
-  background-image: url('../assets/images/work/TimelyScreenshot.png');
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+#abide-assay {
+  background-image: url('../assets/abideAssay.png')
 }
-#biwoc-health {
-  background-image: url('../assets/images/work/BIWOCScreenshot.png');
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+
+#mo-gas-tax-back {
+  background-image: url('../assets/MOGasTaxBack.webp')
 }
-#rebound {
-  background-image: url('../assets/images/work/ReboundScreenshot.png');
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-#team-profile-generator {
-  background-image: url('../assets/images/work/TeamProfileGeneratorScreenshot.png');
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-} */

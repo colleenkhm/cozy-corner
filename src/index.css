@@ -1,19 +1,24 @@
-:root {
-  --color-bg: #2E2F3E;
-  --color-text-primary: #F5EDE8;
-  --color-text-secondary: #A8C0A0;
-  --color-tertiary: #7F7A95;
-  --color-accent: #5A7A63;
-  --color-accent-light: #9BB89F;
-  --color-heading: #B392B8;
-}
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syncopate:wght@400;700&display=swap');
 
+:root {
+  --color-bg: #F4EDE4;
+  --color-text-primary: #1A1E26;
+  --color-text-secondary: #2E3A46;
+
+  --color-heading: #27B4C0;
+  --color-accent: #C43C65;
+  --color-accent-light: #E15780;
+  --color-accent-blue: #9EE6F1;
+
+  --color-card-bg: #FFFFFF;
+  --color-card-text: #1A1E26;
+}
 
 #root {
   background-color: var(--color-bg);
   color: var(--color-text-primary);
-  margin: 0 auto;
-  padding: 20px;
+  min-height: 100vh;
+  padding: 40px 24px;
 }
 
 html, body, #root {
@@ -23,44 +28,68 @@ html, body, #root {
   background-color: var(--color-bg);
 }
 
-
 body {
   text-align: center;
-  font-family: 'Lexend', sans-serif;
-  /* font-family: 'Barlow', sans-serif; */
-  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif; */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Space Grotesk', sans-serif;
 }
-h1, h2, h3 {
-  color: var(--color-tertiary);
+
+p, li {
+  line-height: 1.6;
 }
+
+h1 {
+  font-family: 'Syncopate', sans-serif;
+  letter-spacing: 0.08em;
+  color: var(--color-heading);
+}
+
+h2, h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 800;
+  color: var(--color-heading);
+  letter-spacing: -0.03em;
+}
+
+
 p, span {
   color: var(--color-text-secondary);
 }
 
 a {
-  color: var(--color-accent);
+  color: inherit;
+}
+
+a:hover {
+  color: var(--color-accent-light);
 }
 
 button {
-  background-color: var(--color-text-secondary); /* lighter button for contrast */
-  color: var(--color-bg); /* text matches background for cozy look */
+  background-color: var(--color-accent);
+  color: #FFFFFF;
   border: none;
   padding: 0.5em 1em;
   border-radius: 6px;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: var(--color-accent-light);
+  color: #FFFFFF;
+}
+
+.square-image {
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 .card {
-  background-color: var(--color-text-secondary); /* dusty rose cards */
-  color: var(--color-bg); /* burgundy text inside cards */
+  background-color: var(--color-card-bg);
+  color: var(--color-card-text);
   border-radius: 8px;
   padding: 1em;
-}
-
-.section-container {
-  margin: 50px 30px 30px 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .AppLayout {
@@ -69,28 +98,28 @@ button {
 }
 
 .globalLink {
-  color: var(--color-accent)
+  color: var(--color-accent);
 }
 
 .globalLink:hover {
-  color: var(--color-text-secondary)
+  color: var(--color-accent-light);
 }
 
 .globalLink:visited {
   text-decoration: none;
   color: var(--color-accent);
 }
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
 
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+.text-block {
+  max-width: 830px;
+  margin: 32px auto;
+  padding: 0 12px;
+  text-align: center;
+}
+
+.text-block::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}

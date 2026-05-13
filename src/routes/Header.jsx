@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 import '../index.css'
 
-export default function Header() {
+function Header() {
   return (
     <>
       <header>
@@ -12,7 +12,6 @@ export default function Header() {
         <nav>
           <ul>
             <li><Link className='globalLink' to="/about">about</Link></li>
-
 
             <li><Link className='globalLink' to="/work">work</Link></li>
 
@@ -26,3 +25,5 @@ export default function Header() {
     </>
   );
 }
+
+export default Header

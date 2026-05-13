@@ -8,6 +8,7 @@ import stLouis from '../assets/stLouis.jpeg'
 
 function About() {
   return (
+    <>
     <div className="about-section">
 
       {/* Intro / Story Header */}
@@ -26,10 +27,13 @@ I enjoy building thoughtful, user-centered experiences and am especially interes
       </p> */}
 
       {/* Location Cards */}
-      <Grid container spacing={6} className="about-container" justifyContent="space-between">
 
-        <Grid item xs={12} md={6}>
-               <Card className="location-card horizontal">
+      </div>
+      <div>
+      <Grid container className="about-container" justifyContent="center" spacing={10}>
+
+        <Grid item xs={12} md={3}>
+               <Card className="location-card">
     
     <img src={portland} alt="Forest in Portland" className="location-image" />
 
@@ -42,9 +46,12 @@ I enjoy building thoughtful, user-centered experiences and am especially interes
 
   </Card>
         </Grid>
+        <Grid item xs={12} md={3}>
+          
+        </Grid>
 
         {/* St. Louis Card */}
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={3}>
                <Card className="location-card horizontal">
     
     <img src={stLouis} alt="St. Louis Gateway Arch at sunset" className="location-image" />
@@ -58,9 +65,9 @@ I enjoy building thoughtful, user-centered experiences and am especially interes
 
   </Card>
         </Grid>
-
       </Grid>
-    </div>
+      </div>
+      </>
   )
 }
 

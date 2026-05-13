@@ -18,28 +18,28 @@ h3 {
   text-align: left;
 }
 
-.home-card {
+/* .home-card {
   background-color:var(--color-accent-blue) !important;
   padding: 16px;
   border-radius: 16px !important;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: left;
-}
+} */
 
-.home-card:hover {
+/* .home-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12) !important;
-}
+} */
 
 /* Make image feel integrated with card */
-.home-image {
+/* .home-image {
   width: 400px;
   height: 400px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 12px;
-}
+} */
 
 /* .home-image {
   max-width: 200px;
@@ -50,3 +50,49 @@ h3 {
   margin-left: auto;
   margin-right: auto;
 } */
+
+.about-section {
+  margin: 0 auto;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.bio {
+  margin-bottom: 16px;
+}
+
+/* Card styling */
+.location-card {
+  background-color:var(--color-accent-blue) !important;
+  padding: 16px;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+}
+
+.location-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Make image feel integrated with card */
+.location-image {
+  width: 250px;
+  height: 250px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+#first {
+  text-align: left;
+}
+
+#second {
+  text-align: center;
+}
+
+#third {
+  text-align: right;
+}

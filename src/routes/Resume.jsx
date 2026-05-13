@@ -49,10 +49,12 @@ function Resume() {
               <div className="list-item">Adaptable</div>
               <div className="list-item">Customer-Focused</div>
               <div className="list-item">Self-Motivated</div>
+              <div className="list-item">Quick Learner</div>
               <div className="list-item">Collaborative</div>
+              <div className="list-item">Team Player</div>
               <div className="list-item">Leadership Experience</div>
               <div className="list-item">Growth Mindset</div>
-              <div className="list-item">Empathy</div>
+              <div className="list-item">Thoughtful</div>
             </div>
           </Grid>
         </Grid>

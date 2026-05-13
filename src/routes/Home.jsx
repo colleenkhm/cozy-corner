@@ -1,4 +1,5 @@
 import Grid from '@mui/material/Grid'
+import '../styles/Home.css'
 import meProfile from '../assets/meProfile.jpeg'
 import meViolinYoung from '../assets/meViolinYoung.jpeg'
 import bali from '../assets/bali.jpeg'
@@ -13,21 +14,20 @@ export default function Home () {
     <Grid container spacing={10} className="about-container" justifyContent="center">
 
         <Grid xs={12} md={3}>
-               <Card className="location-card">
+               <Card className="location-card" id="first">
                  <CardContent>
-      <h4 variant="h6">software engineer</h4>
+      <h4>software engineer</h4>
     </CardContent>
     
-    <img src={meProfile} alt="Forest in Portland" className="location-image" />
+    <img src={meProfile} alt="Colleen smiling" className="location-image" />
 
   </Card>
         </Grid>
 
-        {/* St. Louis Card */}
         <Grid xs={12} md={3}>
-               <Card className="location-card">
+               <Card className="location-card" id="second">
     
-    <img src={meViolinYoung} alt="St. Louis Gateway Arch at sunset" className="location-image" />
+    <img src={meViolinYoung} alt="Colleen as an 8 year old playing violin" className="location-image" />
 
     <CardContent>
       <h4>musician</h4>
@@ -37,9 +37,9 @@ export default function Home () {
         </Grid>
 
         <Grid xs={12} md={3}>
-               <Card className="location-card ">
+               <Card className="location-card" id="third">
                 <CardContent>
-      <h4>traveler</h4>
+      <h4>world traveler</h4>
     </CardContent>
     
     <img src={bali} alt="couple looking out at peninsula" className="location-image" />

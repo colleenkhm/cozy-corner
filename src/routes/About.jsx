@@ -51,7 +51,7 @@ function About() {
 
       </div>
       <div>
-      <Grid container className="about-container" justifyContent="center" spacing={10}>
+      <Grid container className="about-container" justifyContent="center" spacing={8}>
 
         <Grid item xs={12} md={3}>
                <Card className="about-card">

@@ -10,13 +10,12 @@ export default function Home () {
   return (
   <>
   <div>
-    <p className="text-block">linguistically-savvy dev striving to break down communication barriers, improve information accessibility, and inspire creativity</p>
-    <Grid container spacing={10} className="about-container" justifyContent="center">
+    <Grid container spacing={12} className="about-container" justifyContent="center">
 
         <Grid xs={12} md={3}>
                <Card className="location-card" id="first">
                  <CardContent>
-      <h4>software engineer</h4>
+      <h4 className="title">software engineer</h4>
     </CardContent>
     
     <img src={meProfile} alt="Colleen smiling" className="location-image" />
@@ -30,7 +29,7 @@ export default function Home () {
     <img src={meViolinYoung} alt="Colleen as an 8 year old playing violin" className="location-image" />
 
     <CardContent>
-      <h4>musician</h4>
+      <h4 className="title">musician</h4>
     </CardContent>
 
   </Card>
@@ -39,7 +38,7 @@ export default function Home () {
         <Grid xs={12} md={3}>
                <Card className="location-card" id="third">
                 <CardContent>
-      <h4>world traveler</h4>
+      <h4 className="title">world traveler</h4>
     </CardContent>
     
     <img src={bali} alt="couple looking out at peninsula" className="location-image" />
@@ -48,6 +47,7 @@ export default function Home () {
         </Grid>
 
       </Grid>
+      <p className="text-block">linguistically-savvy dev striving to break down communication barriers, improve information accessibility, and inspire creativity</p>
   </div>
   </>
   )

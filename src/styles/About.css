@@ -6,7 +6,7 @@
 
 .profile-card {
   display: flex;
-  background-color:var(--color-accent-blue) !important;
+  background-color:var(--color-heading) !important;
   padding: 16px;
   border-radius: 16px !important;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
@@ -18,6 +18,7 @@
 .profile-image {
 width: 250px;
 height: 250px;
+border-radius: 12px;
 }
 
 .intro-section {
@@ -25,7 +26,7 @@ height: 250px;
   align-items: center;
   gap: 3rem;
   margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .bio-container {
@@ -49,10 +50,14 @@ height: 250px;
   }
 }
 
+.about-container {
+  margin-bottom: 50px;
+}
+
 /* Card styling */
 .about-card {
   display: flex;
-  background-color:var(--color-heading) !important;
+  background-color: var(--color-heading) !important;
   padding: 16px;
   border-radius: 16px !important;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
@@ -69,14 +74,16 @@ height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 6px;
+  background-color: var(--color-accent-blue) !important;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
-/* Make image feel integrated with card */
 .about-image {
   width: 200px;
   height: 200px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 12px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
 }

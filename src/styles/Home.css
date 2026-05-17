@@ -52,6 +52,10 @@ h3 {
   border-radius: 12px;
 }
 
+.link {
+  text-decoration: none;
+}
+
 /* .title {
   background-color: var(--color-accent-blue);
   padding: 12px;

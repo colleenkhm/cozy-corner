@@ -5,6 +5,7 @@ import meViolinYoung from '../assets/meViolinYoung.jpeg'
 import bali from '../assets/bali.jpeg'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
+import { Link } from 'react-router'
 
 export default function Home () {
   return (
@@ -34,7 +35,7 @@ export default function Home () {
 
   </Card>
         </Grid>
-
+<Link to="/travels" className="link" >
         <Grid xs={12} md={3}>
                <Card className="location-card" id="third">
                 <CardContent>
@@ -45,6 +46,7 @@ export default function Home () {
 
   </Card>
         </Grid>
+        </Link>
 
       </Grid>
       <p className="text-block">linguistically-savvy dev striving to break down communication barriers, improve information accessibility, and inspire creativity</p>

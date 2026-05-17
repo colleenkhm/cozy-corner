@@ -18,10 +18,9 @@
   background-color: var(--color-bg);
   color: var(--color-text-primary);
   min-height: 100vh;
-  padding: 40px 24px;
 }
 
-html, body, #root {
+html, body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -31,6 +30,7 @@ html, body, #root {
 body {
   text-align: center;
   font-family: 'Space Grotesk', sans-serif;
+  overflow-x: hidden;
 }
 
 p, li {

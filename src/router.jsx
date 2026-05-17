@@ -5,6 +5,7 @@ import About from './routes/About';
 import Work from './routes/Work';
 import Resume from './routes/Resume';
 import Contact from './routes/Contact';
+import Travels from './routes/Travels';
 
 const router = createHashRouter([
   {
@@ -16,6 +17,7 @@ const router = createHashRouter([
       { path: 'work', element: <Work /> },
       { path: 'resume', element: <Resume /> },
       { path: 'contact', element: <Contact /> },
+      { path: 'travels', element: <Travels /> },
     ],
   },
   {

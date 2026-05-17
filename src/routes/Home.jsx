@@ -17,6 +17,7 @@ export default function Home() {
           className="about-container"
           justifyContent="center"
         >
+          <Link to="/resume">
           <Grid xs={12} md={3}>
             <Card className="location-card" id="first">
               <CardContent>
@@ -30,6 +31,7 @@ export default function Home() {
               />
             </Card>
           </Grid>
+          </Link>
 
           <Grid xs={12} md={3}>
             <Card className="location-card" id="second">

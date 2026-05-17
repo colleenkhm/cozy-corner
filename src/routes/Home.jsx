@@ -1,56 +1,70 @@
-import Grid from '@mui/material/Grid'
-import '../styles/Home.css'
-import meProfile from '../assets/meProfile.jpeg'
-import meViolinYoung from '../assets/meViolinYoung.jpeg'
-import bali from '../assets/bali.jpeg'
-import Card from '@mui/material/Card'
-import CardContent from '@mui/material/CardContent'
-import { Link } from 'react-router'
+import Grid from "@mui/material/Grid";
+import "../styles/Home.css";
+import meProfile from "../assets/meProfile.jpeg";
+import meViolinYoung from "../assets/meViolinYoung.jpeg";
+import bali from "../assets/bali.jpeg";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import { Link } from "react-router";
 
-export default function Home () {
+export default function Home() {
   return (
-  <>
-  <div>
-    <Grid container spacing={12} className="about-container" justifyContent="center">
+    <>
+      <div>
+        <Grid
+          container
+          spacing={12}
+          className="about-container"
+          justifyContent="center"
+        >
+          <Grid xs={12} md={3}>
+            <Card className="location-card" id="first">
+              <CardContent>
+                <h4 className="title">software engineer</h4>
+              </CardContent>
 
-        <Grid xs={12} md={3}>
-               <Card className="location-card" id="first">
-                 <CardContent>
-      <h4 className="title">software engineer</h4>
-    </CardContent>
-    
-    <img src={meProfile} alt="Colleen smiling" className="location-image" />
+              <img
+                src={meProfile}
+                alt="Colleen smiling"
+                className="location-image"
+              />
+            </Card>
+          </Grid>
 
-  </Card>
-        </Grid>
+          <Grid xs={12} md={3}>
+            <Card className="location-card" id="second">
+              <img
+                src={meViolinYoung}
+                alt="Colleen as an 8 year old playing violin"
+                className="location-image"
+              />
 
-        <Grid xs={12} md={3}>
-               <Card className="location-card" id="second">
-    
-    <img src={meViolinYoung} alt="Colleen as an 8 year old playing violin" className="location-image" />
-
-    <CardContent>
-      <h4 className="title">musician</h4>
-    </CardContent>
-
-  </Card>
-        </Grid>
-<Link to="/travels" className="link" >
-        <Grid xs={12} md={3}>
-               <Card className="location-card" id="third">
+              <CardContent>
+                <h4 className="title">musician</h4>
+              </CardContent>
+            </Card>
+          </Grid>
+          <Link to="/travels" className="link">
+            <Grid xs={12} md={3}>
+              <Card className="location-card" id="third">
                 <CardContent>
-      <h4 className="title">world traveler</h4>
-    </CardContent>
-    
-    <img src={bali} alt="couple looking out at peninsula" className="location-image" />
+                  <h4 className="title">world traveler</h4>
+                </CardContent>
 
-  </Card>
+                <img
+                  src={bali}
+                  alt="couple looking out at peninsula"
+                  className="location-image"
+                />
+              </Card>
+            </Grid>
+          </Link>
         </Grid>
-        </Link>
-
-      </Grid>
-      <p className="text-block">linguistically-savvy dev striving to break down communication barriers, improve information accessibility, and inspire creativity</p>
-  </div>
-  </>
-  )
+        <p className="text-block">
+          linguistically-savvy dev striving to break down communication
+          barriers, improve information accessibility, and inspire creativity
+        </p>
+      </div>
+    </>
+  );
 }

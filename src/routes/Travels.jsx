@@ -1,7 +1,7 @@
-import worldMap from '../assets/world-map-outline-isolated-on-transparent-background-free-png-3465182794.png'
-import MapPin from '../components/MapPin'
-import travels from '../data/travels.data'
-import '../styles/Travels.css'
+import worldMap from "../assets/world-map-outline-isolated-on-transparent-background-free-png-3465182794.png";
+import MapPin from "../components/MapPin";
+import travels from "../data/travels.data";
+import "../styles/Travels.css";
 
 function Travels() {
   return (
@@ -19,7 +19,7 @@ function Travels() {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Travels
+export default Travels;

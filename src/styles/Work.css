@@ -12,7 +12,9 @@
   color: var(--primary);
   background-color: #dbe7ff;
   overflow: hidden;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
 
 .flex-item:hover {
@@ -29,13 +31,13 @@
 }
 
 #sigma-aldrich {
-  background-image: url('../assets/MilliporeSigma.png')
+  background-image: url("../assets/MilliporeSigma.png");
 }
 
 #abide-assay {
-  background-image: url('../assets/abideAssay.png')
+  background-image: url("../assets/abideAssay.png");
 }
 
 #mo-gas-tax-back {
-  background-image: url('../assets/MOGasTaxBack.webp')
+  background-image: url("../assets/MOGasTaxBack.webp");
 }

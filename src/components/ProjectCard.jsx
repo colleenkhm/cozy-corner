@@ -1,4 +1,4 @@
-import '../styles/ProjectCard.css'
+import "../styles/ProjectCard.css";
 
 function ProjectCard({ title, tech, image, href, alt }) {
   return (
@@ -8,11 +8,7 @@ function ProjectCard({ title, tech, image, href, alt }) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img
-        src={image}
-        alt={alt}
-        className="project-card-image"
-      />
+      <img src={image} alt={alt} className="project-card-image" />
 
       <div className="project-card-info">
         <h4>{title}</h4>

@@ -23,7 +23,7 @@
 }
 
 .contact-link:hover {
-  color: var(--color-accent)
+  color: var(--color-accent);
 }
 
 i {

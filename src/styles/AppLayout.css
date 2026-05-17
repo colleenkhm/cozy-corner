@@ -13,11 +13,11 @@ a {
 }
 
 a:hover {
-  background-color: 'red';
+  background-color: "red";
 }
 
 a:visited {
-  text-decoration: 'none';
+  text-decoration: "none";
   color: rgb(31, 31, 89);
 }
 /* @media (prefers-reduced-motion: no-preference) {

@@ -2,7 +2,7 @@ export const natureImages = [
   {
     original: "/images/nature1.jpg",
     thumbnail: "/images/nature1.jpg",
-    description: ''
+    description: "",
   },
   {
     original: "/images/nature2.jpg",

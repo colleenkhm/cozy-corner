@@ -6,7 +6,9 @@
   overflow: hidden;
   text-decoration: none;
   background-color: #dbe7ff;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
 
 .project-card:hover {

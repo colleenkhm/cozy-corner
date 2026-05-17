@@ -1,9 +1,9 @@
-import React from 'react';
-import { useForm } from 'react-hook-form';
-import emailjs from '@emailjs/browser';
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import '../styles/Contact.css';
+import React from "react";
+import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "../styles/Contact.css";
 
 export default function Contact() {
   const {
@@ -21,22 +21,22 @@ export default function Contact() {
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
         { name, email, subject, message },
-        process.env.REACT_APP_PUBLIC_KEY
+        process.env.REACT_APP_PUBLIC_KEY,
       );
       reset();
-      toast.success('Form sent!', {
-        position: 'bottom-right',
+      toast.success("Form sent!", {
+        position: "bottom-right",
         autoClose: 5000,
         hideProgressBar: true,
         closeOnClick: true,
         pauseOnHover: true,
         draggable: false,
-        className: 'submit-feedback success',
+        className: "submit-feedback success",
       });
     } catch (error) {
       console.error(error);
-      toast.error('Failed to send form. Please try again.', {
-        position: 'bottom-right',
+      toast.error("Failed to send form. Please try again.", {
+        position: "bottom-right",
         autoClose: 5000,
         hideProgressBar: true,
         closeOnClick: true,
@@ -56,9 +56,9 @@ export default function Contact() {
                 <div className="col-6">
                   <input
                     type="text"
-                    {...register('name', {
-                      required: 'Please enter your name',
-                      maxLength: { value: 30, message: 'Max 30 characters' },
+                    {...register("name", {
+                      required: "Please enter your name",
+                      maxLength: { value: 30, message: "Max 30 characters" },
                     })}
                     className="form-control formInput"
                     placeholder="Name"
@@ -70,11 +70,12 @@ export default function Contact() {
                 <div className="col-6">
                   <input
                     type="email"
-                    {...register('email', {
-                      required: 'Please enter your email',
+                    {...register("email", {
+                      required: "Please enter your email",
                       pattern: {
-                        value: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-                        message: 'Invalid email address',
+                        value:
+                          /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                        message: "Invalid email address",
                       },
                     })}
                     className="form-control formInput"
@@ -90,15 +91,17 @@ export default function Contact() {
                 <div className="col-12">
                   <input
                     type="text"
-                    {...register('subject', {
-                      required: 'Please enter a subject',
-                      maxLength: { value: 75, message: 'Max 75 characters' },
+                    {...register("subject", {
+                      required: "Please enter a subject",
+                      maxLength: { value: 75, message: "Max 75 characters" },
                     })}
                     className="form-control formInput"
                     placeholder="Subject"
                   />
                   {errors.subject && (
-                    <span className="errorMessage">{errors.subject.message}</span>
+                    <span className="errorMessage">
+                      {errors.subject.message}
+                    </span>
                   )}
                 </div>
               </div>
@@ -107,18 +110,26 @@ export default function Contact() {
                 <div className="col-12">
                   <textarea
                     rows={5}
-                    {...register('message', { required: 'Please enter a message' })}
+                    {...register("message", {
+                      required: "Please enter a message",
+                    })}
                     className="form-control formInput"
                     placeholder="Message"
                   />
                   {errors.message && (
-                    <span className="errorMessage">{errors.message.message}</span>
+                    <span className="errorMessage">
+                      {errors.message.message}
+                    </span>
                   )}
                 </div>
               </div>
 
-              <button className="submit-btn" type="submit" disabled={isSubmitting}>
-                {isSubmitting ? 'Sending...' : 'Submit'}
+              <button
+                className="submit-btn"
+                type="submit"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "Sending..." : "Submit"}
               </button>
             </form>
           </div>

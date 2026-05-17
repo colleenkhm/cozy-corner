@@ -1,7 +1,7 @@
-import Grid from '@mui/material/Grid'
-import portfolioResume from '../assets/colleen-murray-resume-new.pdf'
-import '../styles/Resume.css'
-import resumeScreenshot from '../assets/colleen-murray-resume-screenshot.png'
+import Grid from "@mui/material/Grid";
+import portfolioResume from "../assets/colleen-murray-resume-new.pdf";
+import "../styles/Resume.css";
+import resumeScreenshot from "../assets/colleen-murray-resume-screenshot.png";
 
 function Resume() {
   return (
@@ -23,7 +23,7 @@ function Resume() {
               <div className="list-item">Node.js</div>
               <div className="list-item">SQL</div>
               <div className="list-item">Jira</div>
-               <div className="list-item">Postman</div>
+              <div className="list-item">Postman</div>
               <div className="list-item">Git</div>
             </div>
           </Grid>
@@ -60,9 +60,9 @@ function Resume() {
         </Grid>
       </div>
     </div>
-  )
+  );
 }
 
 // idea for this page: if you hover over or click on a skill
 // a modal will pop up with all the relevant experience for that skill
-export default Resume
+export default Resume;

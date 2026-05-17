@@ -1,8 +1,8 @@
-import { useState } from 'react'
-import { FaMapMarkerAlt } from "react-icons/fa"
+import { useState } from "react";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 function MapPin({ top, left, title, images }) {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <>
@@ -11,15 +11,12 @@ function MapPin({ top, left, title, images }) {
         style={{ top, left }}
         onClick={() => setOpen(true)}
       >
-       <FaMapMarkerAlt />
+        <FaMapMarkerAlt />
       </button>
 
       {open && (
         <div className="modal-overlay" onClick={() => setOpen(false)}>
-          <div
-            className="modal-content"
-            onClick={(e) => e.stopPropagation()}
-          >
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <h2>{title}</h2>
 
             <div className="gallery">
@@ -28,14 +25,12 @@ function MapPin({ top, left, title, images }) {
               ))}
             </div>
 
-            <button onClick={() => setOpen(false)}>
-              Close
-            </button>
+            <button onClick={() => setOpen(false)}>Close</button>
           </div>
         </div>
       )}
     </>
-  )
+  );
 }
 
-export default MapPin
+export default MapPin;

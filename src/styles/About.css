@@ -6,19 +6,21 @@
 
 .profile-card {
   display: flex;
-  background-color:var(--color-heading) !important;
+  background-color: var(--color-heading) !important;
   padding: 16px;
   border-radius: 16px !important;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   align-self: center;
   max-width: 300px;
 }
 
 .profile-image {
-width: 250px;
-height: 250px;
-border-radius: 12px;
+  width: 250px;
+  height: 250px;
+  border-radius: 12px;
 }
 
 .intro-section {
@@ -61,7 +63,9 @@ border-radius: 12px;
   padding: 16px;
   border-radius: 16px !important;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   text-align: left;
 }
 

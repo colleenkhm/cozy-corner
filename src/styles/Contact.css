@@ -25,13 +25,13 @@
 }
 
 .col-4 {
-    width: 100%;
-    padding: 5px;
+  width: 100%;
+  padding: 5px;
 }
 
 .col-12 {
-    width: 100%;
-    padding: 5px;
+  width: 100%;
+  padding: 5px;
 }
 
 .formInput {
@@ -42,10 +42,10 @@
 }
 
 .formInput::placeholder {
-    font-family: inherit !important;
-    font-size: inherit !important;
-    opacity: 0.7;
-  }
+  font-family: inherit !important;
+  font-size: inherit !important;
+  opacity: 0.7;
+}
 
 .submit-btn {
   background-color: var(--color-heading);

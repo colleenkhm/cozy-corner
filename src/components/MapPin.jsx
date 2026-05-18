@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Modal from "@mui/material/Modal";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 function MapPin({ top, left, title, images }) {
@@ -15,19 +16,20 @@ function MapPin({ top, left, title, images }) {
       </button>
 
       {open && (
-        <div className="modal-overlay" onClick={() => setOpen(false)}>
+        <Modal
+  open={open}
+  onClose={() => setOpen(false)}
+>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button onClick={() => setOpen(false)} className="close-button">x</button>
             <h2>{title}</h2>
-
             <div className="gallery">
-              {images.map((img, index) => (
-                <img key={index} src={img} alt={title} />
-              ))}
+             {images.map((img, index) => (
+               <img key={index} src={img} alt={title} />
+            ))}
             </div>
-
-            <button onClick={() => setOpen(false)}>Close</button>
           </div>
-        </div>
+        </Modal>
       )}
     </>
   );

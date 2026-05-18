@@ -53,9 +53,9 @@ function About() {
           container
           className="about-container"
           justifyContent="center"
-          spacing={8}
+          spacing={10}
         >
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={4}>
             <Card className="about-card">
               <img
                 src={portland}
@@ -71,10 +71,9 @@ function About() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={12} md={3}></Grid>
 
           {/* St. Louis Card */}
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={4}>
             <Card className="about-card">
               <img
                 src={stLouis}

@@ -7,8 +7,18 @@ function Resume() {
   return (
     <div className="skills-container">
       <div>
-        <Grid container spacing={20}>
-          <Grid item xs={12} md={4} className="column">
+        <Grid
+  container
+  spacing={{xs: 4, md: 20}}
+  direction={{ xs: "column", md: "row" }}
+>
+          <Grid
+  item
+  xs={12}
+  md={4}
+  display="flex"
+  justifyContent="center"
+>
             <div className="skills" id="technical-skills">
               <h3>Technical Skills</h3>
               <div className="list-item">React.js</div>
@@ -43,7 +53,13 @@ function Resume() {
               </div>
             </div>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid
+  item
+  xs={12}
+  md={4}
+  display="flex"
+  justifyContent="center"
+>
             <div className="skills" id="soft-skills">
               <h3>Other Strengths</h3>
               <div className="list-item">Adaptable</div>

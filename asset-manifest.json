@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cozy-corner/static/css/main.55d16c27.css",
-    "main.js": "/cozy-corner/static/js/main.6c1d0cda.js",
+    "main.css": "/cozy-corner/static/css/main.f946f2cf.css",
+    "main.js": "/cozy-corner/static/js/main.39b78ac7.js",
     "static/media/MilliporeSigma.png": "/cozy-corner/static/media/MilliporeSigma.ef761cb15afc190611d5.png",
     "static/media/colleen-murray-resume-screenshot.png": "/cozy-corner/static/media/colleen-murray-resume-screenshot.650634a8d722434c1ade.png",
     "static/media/irelandGlen.jpeg": "/cozy-corner/static/media/irelandGlen.a3a7d35b83aaa67f197c.jpeg",
@@ -62,6 +62,7 @@
     "static/media/baliCliff.jpeg": "/cozy-corner/static/media/baliCliff.29262afa6fdc20bbaa87.jpeg",
     "static/media/baliSunset.jpeg": "/cozy-corner/static/media/baliSunset.2f88f030ea9656936810.jpeg",
     "static/media/italyStatue.jpeg": "/cozy-corner/static/media/italyStatue.c6a1b63f201797b7df6b.jpeg",
+    "static/media/scaler_screenshot_1.png": "/cozy-corner/static/media/scaler_screenshot_1.986689ede4a0a8811a8e.png",
     "static/media/guatemalaBoat.jpeg": "/cozy-corner/static/media/guatemalaBoat.06f57560a7841a42aaa5.jpeg",
     "static/media/irelandAntiques.jpeg": "/cozy-corner/static/media/irelandAntiques.d5b0c3341cf2dda5fc6f.jpeg",
     "static/media/greeceLycabettus.jpeg": "/cozy-corner/static/media/greeceLycabettus.cf5bda5ff009c1c43a7b.jpeg",
@@ -72,11 +73,11 @@
     "static/media/abideAssay.png": "/cozy-corner/static/media/abideAssay.0d7bb2390d622d391161.png",
     "static/media/MOGasTaxBack.webp": "/cozy-corner/static/media/MOGasTaxBack.6e9f462c163c8b0bfa04.webp",
     "index.html": "/cozy-corner/index.html",
-    "main.55d16c27.css.map": "/cozy-corner/static/css/main.55d16c27.css.map",
-    "main.6c1d0cda.js.map": "/cozy-corner/static/js/main.6c1d0cda.js.map"
+    "main.f946f2cf.css.map": "/cozy-corner/static/css/main.f946f2cf.css.map",
+    "main.39b78ac7.js.map": "/cozy-corner/static/js/main.39b78ac7.js.map"
   },
   "entrypoints": [
-    "static/css/main.55d16c27.css",
-    "static/js/main.6c1d0cda.js"
+    "static/css/main.f946f2cf.css",
+    "static/js/main.39b78ac7.js"
   ]
 }

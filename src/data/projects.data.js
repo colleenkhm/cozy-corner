@@ -1,6 +1,7 @@
 import sigmaImg from "../assets/MilliporeSigma.png";
 import abideImg from "../assets/abideAssay.png";
 import gasTaxImg from "../assets/MOGasTaxBack.webp";
+import scalerImg from "../assets/scaler_screenshot_1.png"
 
 const projects = [
   {
@@ -24,6 +25,13 @@ const projects = [
     href: "https://apps.apple.com/us/app/mo-gas-tax-back/",
     alt: "MO Gas Tax Back screenshot",
   },
+  {
+    title: "Scaler",
+    tech: "React/MUI",
+    image: scalerImg,
+    href: "https://rose-etta.github.io/scaler/",
+    alt: "Scaler App for Musicians"
+  }
   // {
   //   title: 'rebound',
   //   tech: 'React/JavaScript',

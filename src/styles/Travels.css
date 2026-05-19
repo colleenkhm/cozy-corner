@@ -33,6 +33,18 @@
   height: 100%;
 }
 
+.modal {
+  position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-height: 80vh;
+      overflow-y: auto;
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+}
+
 .modal-content {
   position: absolute;
   top: 50%;
@@ -41,6 +53,8 @@
   border-radius: 12px;
   background: white;
   padding: 20px;
+  max-height: '80vh';
+  overflow-y: auto;
 }
 
 .close-button {

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cozy-corner/static/css/main.f946f2cf.css",
-    "main.js": "/cozy-corner/static/js/main.39b78ac7.js",
+    "main.js": "/cozy-corner/static/js/main.b18d7a9a.js",
     "static/media/MilliporeSigma.png": "/cozy-corner/static/media/MilliporeSigma.ef761cb15afc190611d5.png",
     "static/media/colleen-murray-resume-screenshot.png": "/cozy-corner/static/media/colleen-murray-resume-screenshot.650634a8d722434c1ade.png",
     "static/media/irelandGlen.jpeg": "/cozy-corner/static/media/irelandGlen.a3a7d35b83aaa67f197c.jpeg",
@@ -74,10 +74,10 @@
     "static/media/MOGasTaxBack.webp": "/cozy-corner/static/media/MOGasTaxBack.6e9f462c163c8b0bfa04.webp",
     "index.html": "/cozy-corner/index.html",
     "main.f946f2cf.css.map": "/cozy-corner/static/css/main.f946f2cf.css.map",
-    "main.39b78ac7.js.map": "/cozy-corner/static/js/main.39b78ac7.js.map"
+    "main.b18d7a9a.js.map": "/cozy-corner/static/js/main.b18d7a9a.js.map"
   },
   "entrypoints": [
     "static/css/main.f946f2cf.css",
-    "static/js/main.39b78ac7.js"
+    "static/js/main.b18d7a9a.js"
   ]
 }

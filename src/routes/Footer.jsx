@@ -45,7 +45,7 @@ function Footer() {
           <div className="contact-item">
             <a
               className="contact-link"
-              href="https://github.com/rose-etta"
+              href="https://github.com/colleenkhm"
               target="_blank"
               rel="noopener noreferrer"
               title="Github"

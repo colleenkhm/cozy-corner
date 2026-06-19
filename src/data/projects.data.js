@@ -29,7 +29,7 @@ const projects = [
     title: "Scaler",
     tech: "React/MUI",
     image: scalerImg,
-    href: "https://rose-etta.github.io/scaler/",
+    href: "https://colleenkhm.github.io/scaler/",
     alt: "Scaler App for Musicians"
   }
   // {

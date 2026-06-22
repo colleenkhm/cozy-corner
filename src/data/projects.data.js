@@ -2,6 +2,7 @@ import sigmaImg from "../assets/MilliporeSigma.png";
 import abideImg from "../assets/abideAssay.png";
 import gasTaxImg from "../assets/MOGasTaxBack.webp";
 import scalerImg from "../assets/scaler_screenshot_1.png"
+import jawImg from "../assets/just-a-word-screenshot.png"
 
 const projects = [
   {
@@ -31,14 +32,14 @@ const projects = [
     image: scalerImg,
     href: "https://colleenkhm.github.io/scaler/",
     alt: "Scaler App for Musicians"
-  }
-  // {
-  //   title: 'rebound',
-  //   tech: 'React/JavaScript',
-  //   image: gasTaxImg,
-  //   href: 'https://example.com',
-  //   alt: 'MO Gas Tax Back screenshot',
-  // },
+  },
+  {
+    title: 'Just A Word',
+    tech: 'Flutter/Dart',
+    image: jawImg,
+    href: 'http://www.just-a-word.com/',
+    alt: 'Just A Word screenshot',
+  },
 ];
 
 export default projects;

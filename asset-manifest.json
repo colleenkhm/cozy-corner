@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cozy-corner/static/css/main.f946f2cf.css",
-    "main.js": "/cozy-corner/static/js/main.b18d7a9a.js",
+    "main.js": "/cozy-corner/static/js/main.02509e8e.js",
     "static/media/MilliporeSigma.png": "/cozy-corner/static/media/MilliporeSigma.ef761cb15afc190611d5.png",
     "static/media/colleen-murray-resume-screenshot.png": "/cozy-corner/static/media/colleen-murray-resume-screenshot.650634a8d722434c1ade.png",
     "static/media/irelandGlen.jpeg": "/cozy-corner/static/media/irelandGlen.a3a7d35b83aaa67f197c.jpeg",
@@ -71,13 +71,14 @@
     "static/media/meProfile.jpeg": "/cozy-corner/static/media/meProfile.aabe0c3c187904470c68.jpeg",
     "static/media/stLouis.jpeg": "/cozy-corner/static/media/stLouis.3e33c7f5390be41b1705.jpeg",
     "static/media/abideAssay.png": "/cozy-corner/static/media/abideAssay.0d7bb2390d622d391161.png",
+    "static/media/just-a-word-screenshot.png": "/cozy-corner/static/media/just-a-word-screenshot.198c011e3db90cb41760.png",
     "static/media/MOGasTaxBack.webp": "/cozy-corner/static/media/MOGasTaxBack.6e9f462c163c8b0bfa04.webp",
     "index.html": "/cozy-corner/index.html",
     "main.f946f2cf.css.map": "/cozy-corner/static/css/main.f946f2cf.css.map",
-    "main.b18d7a9a.js.map": "/cozy-corner/static/js/main.b18d7a9a.js.map"
+    "main.02509e8e.js.map": "/cozy-corner/static/js/main.02509e8e.js.map"
   },
   "entrypoints": [
     "static/css/main.f946f2cf.css",
-    "static/js/main.b18d7a9a.js"
+    "static/js/main.02509e8e.js"
   ]
 }

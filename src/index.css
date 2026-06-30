@@ -1,21 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syncopate:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Space+Mono:wght@400;700&display=swap");
 
 :root {
-  --color-bg: #e8efe3;
-  --color-text-primary: #2e2b24;
-  --color-text-secondary: #4a443c;
+  --color-bg: #f7f4ed;
+  --color-text-primary: #161616;
+  --color-text-secondary: #44423c;
 
-  --color-heading: #4f6f52;
-  --color-heading-dark: #3a5440;
-  --color-accent: #8c3a5e;
-  --color-accent-light: #b14d72;
-  --color-accent-blue: #d7e4d3;
+  --color-heading: #111111;
+  --color-heading-dark: #000000;
+  --color-accent: #1d4e89;
+  --color-accent-light: #2f6fb3;
+  --color-accent-blue: #e4e0d2;
 
-  --color-card-bg: #faf7f0;
-  --color-card-text: #2e2b24;
+  --color-card-bg: #ffffff;
+  --color-card-text: #161616;
 
-  --shadow-soft: 0 8px 24px rgba(46, 43, 36, 0.08);
-  --shadow-lift: 0 16px 32px rgba(46, 43, 36, 0.14);
+  --radius: 4px;
+  --shadow-soft: 4px 4px 0 rgba(22, 22, 22, 0.9);
+  --shadow-lift: 7px 7px 0 rgba(22, 22, 22, 0.9);
   --transition-base: 220ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -35,7 +36,7 @@ body {
 
 body {
   text-align: center;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Space Mono", monospace;
   overflow-x: hidden;
 }
 
@@ -45,23 +46,24 @@ li {
 }
 
 h1 {
-  font-family: "Syncopate", sans-serif;
-  letter-spacing: 0.08em;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  letter-spacing: -0.01em;
   color: var(--color-heading);
 }
 
 h2,
 h3 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Playfair Display", serif;
   font-weight: 800;
   color: var(--color-heading);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
 }
 
 h4 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Space Mono", monospace;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 p,
@@ -75,32 +77,38 @@ a {
 }
 
 a:hover {
-  color: var(--color-accent-light);
+  color: var(--color-accent);
 }
 
 .submit-btn {
-  background-color: var(--color-accent);
-  color: #ffffff;
-  border: none;
+  background-color: var(--color-card-bg);
+  color: var(--color-text-primary);
+  border: 2px solid var(--color-text-primary);
   padding: 0.6em 1.4em;
-  border-radius: 8px;
-  font-weight: 600;
+  border-radius: var(--radius);
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   cursor: pointer;
+  box-shadow: var(--shadow-soft);
   transition:
     background-color var(--transition-base),
+    color var(--transition-base),
     transform var(--transition-base),
     box-shadow var(--transition-base);
 }
 
 .submit-btn:hover {
-  background-color: var(--color-accent-light);
-  color: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-soft);
+  background-color: var(--color-text-primary);
+  color: var(--color-bg);
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-lift);
 }
 
 .submit-btn:active {
-  transform: translateY(0);
+  transform: translate(0, 0);
+  box-shadow: 2px 2px 0 rgba(22, 22, 22, 0.9);
 }
 
 .submit-btn:disabled {
@@ -113,13 +121,14 @@ a:hover {
   width: 200px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: var(--radius);
 }
 
 .card {
   background-color: var(--color-card-bg);
   color: var(--color-card-text);
-  border-radius: 12px;
+  border: 2px solid var(--color-text-primary);
+  border-radius: var(--radius);
   padding: 1em;
   box-shadow: var(--shadow-soft);
 }
@@ -130,17 +139,17 @@ a:hover {
 }
 
 .headerLink {
-  color: var(--color-accent);
+  color: var(--color-text-primary);
   transition: color var(--transition-base);
 }
 
 .headerLink:hover {
-  color: var(--color-accent-light);
+  color: var(--color-accent);
 }
 
 .headerLink:visited {
   text-decoration: none;
-  color: var(--color-accent);
+  color: var(--color-text-primary);
 }
 
 .text-block {
@@ -155,4 +164,30 @@ a:hover {
   position: absolute;
   inset: 0;
   pointer-events: none;
+}
+
+/* crossword motif utilities */
+.clue-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 26px;
+  height: 26px;
+  padding: 0 4px;
+  border: 2px solid var(--color-text-primary);
+  background-color: var(--color-card-bg);
+  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.clue-label {
+  display: block;
+  font-family: "Space Mono", monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 6px;
 }

@@ -38,9 +38,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 90vw;
+  max-width: 600px;
+  max-height: 85vh;
+  overflow-y: auto;
   border-radius: 12px;
   background: var(--color-card-bg);
   padding: 20px;
+  box-sizing: border-box;
 }
 
 .close-button {

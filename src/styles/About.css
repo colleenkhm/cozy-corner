@@ -1,106 +1,89 @@
-.about-me-section {
-  margin: 0 auto;
+.about-section {
   max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 64px;
+  box-sizing: border-box;
   text-align: center;
 }
 
-.profile-card {
-  display: flex;
-  background-color: var(--color-heading) !important;
-  padding: 16px;
-  border-radius: 16px !important;
-  box-shadow: var(--shadow-soft) !important;
-  transition:
-    transform var(--transition-base),
-    box-shadow var(--transition-base);
-  align-self: center;
-  max-width: 300px;
-}
-
-.profile-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-lift) !important;
-}
-
-.profile-image {
-  width: 250px;
-  height: 250px;
-  border-radius: 12px;
-}
-
-.intro-section {
+.about-layout {
   display: flex;
   align-items: center;
-  gap: 3rem;
-  margin-top: 2rem;
-  margin-bottom: 5rem;
-  padding: 0 10px;
+  gap: 48px;
+  margin-top: 32px;
+  text-align: left;
 }
 
-.bio-container {
+.about-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  flex-shrink: 0;
+}
+
+.clipping.about-photo {
+  width: 210px;
+  flex-shrink: 0;
+}
+
+.about-photo-1 {
+  transform: rotate(-2deg);
+}
+
+.about-photo-2 {
+  transform: rotate(1.5deg);
+}
+
+.about-photo-3 {
+  transform: rotate(-1deg);
+}
+
+.about-photo-4 {
+  transform: rotate(2deg);
+}
+
+.about-text {
   flex: 1;
+  min-width: 0;
 }
 
 .bio {
-  text-align: left;
   line-height: 1.8;
   margin: 0;
 }
 
+.jump-line {
+  margin: 20px 0 0;
+  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: var(--color-text-secondary);
+}
+
+.jump-link {
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: var(--color-text-primary);
+  transition: color var(--transition-base);
+}
+
+.jump-link:hover {
+  color: var(--color-accent);
+}
+
 @media (max-width: 768px) {
-  .intro-section {
+  .about-layout {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
-  .bio {
-    text-align: center;
+  .about-photos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-}
-
-.about-container {
-  margin-bottom: 50px;
-  display: flex;
-}
-
-/* Card styling */
-.about-card {
-  display: flex;
-  background-color: var(--color-heading) !important;
-  padding: 16px;
-  border-radius: 16px !important;
-  box-shadow: var(--shadow-soft) !important;
-  transition:
-    transform var(--transition-base),
-    box-shadow var(--transition-base);
-  text-align: left;
-  overflow: hidden;
-}
-
-.about-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-lift) !important;
-}
-
-.about-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--color-accent-blue) !important;
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
-}
-
-.about-image {
-  width: 165px;
-  height: 165px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
-  transition: transform var(--transition-base);
-}
-
-.about-card:hover .about-image {
-  transform: scale(1.05);
 }

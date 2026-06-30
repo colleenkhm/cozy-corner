@@ -13,13 +13,14 @@ export default function Home() {
           <span className="name-grid">
             {FIRST_NAME.map((letter, index) => (
               <span className="grid-cell" key={index}>
+                {index === 0 && <span className="grid-cell-number">1</span>}
                 {letter}
               </span>
             ))}
           </span>
         </h2>
         <p className="lede">
-          A crossword-loving dev striving to break down communication
+          1. A crossword-loving dev striving to break down communication
           barriers, improve information accessibility, and inspire creativity
         </p>
       </div>

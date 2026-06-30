@@ -13,7 +13,7 @@ const projects = [
       "A late-night corner of the internet for aimless, cozy exploring.",
     image: nightGlowImg,
     href: "https://nightglow.studio",
-    alt: "an app for late night internet exploring"
+    alt: "Night Glow Studio screenshot"
   },
   {
     title: "Scaler",
@@ -22,7 +22,7 @@ const projects = [
       "A tool that helps musicians narrow down what key a song might be in.",
     image: scalerImg,
     href: "https://colleenkhm.github.io/scaler/",
-    alt: "Scaler App for Musicians"
+    alt: "Scaler App screenshots"
   },
   {
     title: 'Just A Word',

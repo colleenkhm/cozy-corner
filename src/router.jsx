@@ -1,4 +1,4 @@
-import { createHashRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import AppLayout from "./AppLayout";
 import Home from "./routes/Home";
 import About from "./routes/About";
@@ -7,7 +7,7 @@ import Resume from "./routes/Resume";
 import Contact from "./routes/Contact";
 import Travels from "./routes/Travels";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
@@ -19,9 +19,6 @@ const router = createHashRouter([
       { path: "contact", element: <Contact /> },
       { path: "travels", element: <Travels /> },
     ],
-  },
-  {
-    basename: "/cozy-corner/",
   },
 ]);
 

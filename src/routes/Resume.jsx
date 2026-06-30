@@ -8,48 +8,46 @@ function Resume() {
       <div className="resume-columns">
         <div className="skills" id="technical-skills">
           <h3>Technical Skills</h3>
-          <div className="list-item">React.js</div>
-          <div className="list-item">TypeScript</div>
-          <div className="list-item">JavaScript</div>
-          <div className="list-item">Flutter</div>
-          <div className="list-item">GraphQL</div>
-          <div className="list-item">Apollo Client</div>
-          <div className="list-item">Next.js</div>
-          <div className="list-item">Material UI</div>
-          <div className="list-item">Jest</div>
-          <div className="list-item">Playwright</div>
-          <div className="list-item">Node.js</div>
-          <div className="list-item">Dart</div>
-          <div className="list-item">SQL</div>
-          <div className="list-item">Jira</div>
-          <div className="list-item">Postman</div>
-          <div className="list-item">Git</div>
+          <span className="skill-cell">React.js</span>
+          <span className="skill-cell">TypeScript</span>
+          <span className="skill-cell">JavaScript</span>
+          <span className="skill-cell">Flutter</span>
+          <span className="skill-cell">GraphQL</span>
+          <span className="skill-cell">Apollo Client</span>
+          <span className="skill-cell">Next.js</span>
+          <span className="skill-cell">Material UI</span>
+          <span className="skill-cell">Jest</span>
+          <span className="skill-cell">Playwright</span>
+          <span className="skill-cell">Node.js</span>
+          <span className="skill-cell">Dart</span>
+          <span className="skill-cell">SQL</span>
+          <span className="skill-cell">Jira</span>
+          <span className="skill-cell">Postman</span>
+          <span className="skill-cell">Git</span>
         </div>
 
         <div className="resume-image">
           <img src={resumeScreenshot} alt="resume" />
-          <div className="resume-link">
-            <a
-              href={portfolioResume}
-              target="_blank"
-              className="resume-link"
-              rel="noopener noreferrer"
-            >
-              Download Resume Here
-            </a>
-          </div>
+          <a
+            href={portfolioResume}
+            target="_blank"
+            className="submit-btn resume-download"
+            rel="noopener noreferrer"
+          >
+            Download Resume
+          </a>
         </div>
 
         <div className="skills" id="soft-skills">
           <h3>Other Strengths</h3>
-          <div className="list-item">Adaptable</div>
-          <div className="list-item">Customer-Focused</div>
-          <div className="list-item">Self-Motivated</div>
-          <div className="list-item">Quick Learner</div>
-          <div className="list-item">Collaborative</div>
-          <div className="list-item">Team Player</div>
-          <div className="list-item">Leadership Experience</div>
-          <div className="list-item">Growth Mindset</div>
+          <span className="skill-cell">Adaptable</span>
+          <span className="skill-cell">Customer-Focused</span>
+          <span className="skill-cell">Self-Motivated</span>
+          <span className="skill-cell">Quick Learner</span>
+          <span className="skill-cell">Collaborative</span>
+          <span className="skill-cell">Team Player</span>
+          <span className="skill-cell">Leadership Experience</span>
+          <span className="skill-cell">Growth Mindset</span>
         </div>
       </div>
     </div>

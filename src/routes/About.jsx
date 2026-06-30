@@ -14,7 +14,7 @@ function About() {
         <div className="about-photos">
           <figure className="clipping about-photo about-photo-1">
             <img src={cliffsOfMoher} alt="Colleen at the Cliffs of Moher" />
-            <figcaption>Cliffs of Moher, Ireland</figcaption>
+            <figcaption>Cliffs of Moher, Ireland &mdash; where I've been recently</figcaption>
           </figure>
 
           <figure className="clipping about-photo about-photo-2">

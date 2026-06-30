@@ -19,7 +19,7 @@ export default function Home() {
           </span>
         </h2>
         <p className="lede">
-          A linguistically-savvy dev striving to break down communication
+          A crossword-loving dev striving to break down communication
           barriers, improve information accessibility, and inspire creativity
         </p>
       </div>

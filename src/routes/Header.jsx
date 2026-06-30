@@ -20,8 +20,8 @@ function Header() {
             </li>
 
             <li>
-              <Link className="headerLink" to="/work">
-                work
+              <Link className="headerLink" to="/projects">
+                projects
               </Link>
             </li>
 

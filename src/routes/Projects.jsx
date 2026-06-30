@@ -1,8 +1,8 @@
-import "../styles/Work.css";
+import "../styles/Projects.css";
 import ProjectCard from "../components/ProjectCard";
 import projects from "../data/projects.data";
 
-function Work() {
+function Projects() {
   return (
     <div className="work-grid">
       {projects.map((project) => (
@@ -12,4 +12,4 @@ function Work() {
   );
 }
 
-export default Work;
+export default Projects;

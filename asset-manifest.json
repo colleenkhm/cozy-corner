@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.96b84e43.css",
-    "main.js": "/static/js/main.92169b40.js",
+    "main.css": "/static/css/main.52c7229f.css",
+    "main.js": "/static/js/main.a84ddd58.js",
     "static/media/lawrence.jpeg": "/static/media/lawrence.9f760ebda30164bad729.jpeg",
     "static/media/millipore-sigma-screenshot.png": "/static/media/millipore-sigma-screenshot.423567f969575b6628f3.png",
     "static/media/irelandGlen.jpeg": "/static/media/irelandGlen.a3a7d35b83aaa67f197c.jpeg",
@@ -76,11 +76,11 @@
     "static/media/abideAssay.png": "/static/media/abideAssay.0d7bb2390d622d391161.png",
     "static/media/MOGasTaxBack.webp": "/static/media/MOGasTaxBack.6e9f462c163c8b0bfa04.webp",
     "index.html": "/index.html",
-    "main.96b84e43.css.map": "/static/css/main.96b84e43.css.map",
-    "main.92169b40.js.map": "/static/js/main.92169b40.js.map"
+    "main.52c7229f.css.map": "/static/css/main.52c7229f.css.map",
+    "main.a84ddd58.js.map": "/static/js/main.a84ddd58.js.map"
   },
   "entrypoints": [
-    "static/css/main.96b84e43.css",
-    "static/js/main.92169b40.js"
+    "static/css/main.52c7229f.css",
+    "static/js/main.a84ddd58.js"
   ]
 }

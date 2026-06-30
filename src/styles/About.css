@@ -1,7 +1,7 @@
 .about-section {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 0 24px;
+  padding: 0 20px 24px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -81,7 +81,12 @@
     text-align: center;
   }
 
+  .about-text {
+    order: 1;
+  }
+
   .about-photos {
+    order: 2;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;

@@ -1,17 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syncopate:wght@400;700&display=swap");
 
 :root {
-  --color-bg: #f4ede4;
-  --color-text-primary: #1a1e26;
-  --color-text-secondary: #2e3a46;
+  --color-bg: #e8efe3;
+  --color-text-primary: #2e2b24;
+  --color-text-secondary: #4a443c;
 
-  --color-heading: #27b4c0;
-  --color-accent: #c43c65;
-  --color-accent-light: #e15780;
-  --color-accent-blue: #9ee6f1;
+  --color-heading: #4f6f52;
+  --color-heading-dark: #3a5440;
+  --color-accent: #8c3a5e;
+  --color-accent-light: #b14d72;
+  --color-accent-blue: #d7e4d3;
 
-  --color-card-bg: #ffffff;
-  --color-card-text: #1a1e26;
+  --color-card-bg: #faf7f0;
+  --color-card-text: #2e2b24;
+
+  --shadow-soft: 0 8px 24px rgba(46, 43, 36, 0.08);
+  --shadow-lift: 0 16px 32px rgba(46, 43, 36, 0.14);
+  --transition-base: 220ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #root {
@@ -53,6 +58,12 @@ h3 {
   letter-spacing: -0.03em;
 }
 
+h4 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
 p,
 span {
   color: var(--color-text-secondary);
@@ -60,6 +71,7 @@ span {
 
 a {
   color: inherit;
+  transition: color var(--transition-base);
 }
 
 a:hover {
@@ -70,14 +82,31 @@ a:hover {
   background-color: var(--color-accent);
   color: #ffffff;
   border: none;
-  padding: 0.5em 1em;
-  border-radius: 6px;
+  padding: 0.6em 1.4em;
+  border-radius: 8px;
   font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color var(--transition-base),
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
 }
 
 .submit-btn:hover {
   background-color: var(--color-accent-light);
   color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: default;
+  transform: none;
 }
 
 .square-image {
@@ -90,9 +119,9 @@ a:hover {
 .card {
   background-color: var(--color-card-bg);
   color: var(--color-card-text);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 1em;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-soft);
 }
 
 .AppLayout {
@@ -102,6 +131,7 @@ a:hover {
 
 .headerLink {
   color: var(--color-accent);
+  transition: color var(--transition-base);
 }
 
 .headerLink:hover {

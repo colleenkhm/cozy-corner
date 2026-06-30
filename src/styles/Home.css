@@ -1,74 +1,57 @@
-h3 {
-  margin-top: 12px;
-  margin-bottom: 0;
-}
-
 .home-section {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
   text-align: center;
 }
 
-.profile-card {
-  background-color: var(--color-accent-blue) !important;
-  padding: 16px;
-  border-radius: 16px !important;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-  text-align: left;
+.home-hero {
+  display: inline-block;
+  max-width: 650px;
+  margin: 24px auto 48px;
+  padding: 32px 40px;
+  background-color: var(--color-card-bg);
+  border-radius: 20px;
 }
 
-.bio {
-  margin-bottom: 16px;
+.home-hero h2 {
+  margin-bottom: 12px;
 }
 
-/* Card styling */
-.location-card {
-  background-color: var(--color-accent-blue) !important;
-  padding: 16px;
-  border-radius: 16px !important;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-  text-align: left;
+.nav-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 56px;
+  margin-bottom: 48px;
 }
 
-.location-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12) !important;
-}
-
-/* Make image feel integrated with card */
-.location-image {
-  width: 250px;
-  height: 250px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-.link {
+.nav-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-decoration: none;
 }
 
-/* .title {
-  background-color: var(--color-accent-blue);
-  padding: 12px;
-  border-radius: 12px;
+.nav-card-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform var(--transition-base);
+}
+
+.nav-card:hover .nav-card-image {
+  transform: scale(1.06);
+}
+
+.title {
   display: inline-block;
-} */
-
-#first {
-  text-align: left;
-}
-
-#second {
-  text-align: center;
-}
-
-#third {
-  text-align: right;
+  margin: 18px 0 0;
+  padding-top: 8px;
+  border-top: 2px solid var(--color-accent);
+  color: var(--color-text-primary);
+  font-size: 1.05rem;
+  font-weight: 700;
 }

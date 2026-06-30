@@ -9,12 +9,17 @@
   background-color: var(--color-heading) !important;
   padding: 16px;
   border-radius: 16px !important;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+  box-shadow: var(--shadow-soft) !important;
   transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
   align-self: center;
   max-width: 300px;
+}
+
+.profile-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lift) !important;
 }
 
 .profile-image {
@@ -64,16 +69,17 @@
   background-color: var(--color-heading) !important;
   padding: 16px;
   border-radius: 16px !important;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+  box-shadow: var(--shadow-soft) !important;
   transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
   text-align: left;
+  overflow: hidden;
 }
 
 .about-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12) !important;
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lift) !important;
 }
 
 .about-content {
@@ -92,4 +98,9 @@
   object-fit: cover;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
+  transition: transform var(--transition-base);
+}
+
+.about-card:hover .about-image {
+  transform: scale(1.05);
 }

@@ -36,9 +36,19 @@
 
 .formInput {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 12px 14px;
+  border: 1px solid rgba(46, 43, 36, 0.15);
+  border-radius: 8px;
+  background-color: var(--color-card-bg);
+  transition:
+    border-color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: var(--color-heading);
+  box-shadow: 0 0 0 3px rgba(79, 111, 82, 0.18);
 }
 
 .formInput::placeholder {
@@ -52,19 +62,30 @@
   color: var(--color-bg);
   padding: 10px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
   width: 40%;
   margin-top: 20px;
   margin-left: 15px;
+  font-weight: 600;
+  transition:
+    background-color var(--transition-base),
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
 }
 
 .submit-btn:hover {
-  background-color: #047f98;
+  background-color: var(--color-heading-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
 }
 
 .errorMessage {
-  color: var(--color-heading);
+  color: var(--color-accent);
   font-size: 14px;
 }
 

@@ -1,4 +1,3 @@
-import Grid from "@mui/material/Grid";
 import portfolioResume from "../assets/colleen-murray-resume-new.pdf";
 import "../styles/Resume.css";
 import resumeScreenshot from "../assets/colleen-murray-resume-screenshot.png";
@@ -6,74 +5,52 @@ import resumeScreenshot from "../assets/colleen-murray-resume-screenshot.png";
 function Resume() {
   return (
     <div className="skills-container">
-      <div>
-        <Grid
-  container
-  spacing={{xs: 4, md: 20}}
-  direction={{ xs: "column", md: "row" }}
->
-          <Grid
-  item
-  xs={12}
-  md={4}
-  display="flex"
-  justifyContent="center"
->
-            <div className="skills" id="technical-skills">
-              <h3>Technical Skills</h3>
-              <div className="list-item">React.js</div>
-              <div className="list-item">TypeScript</div>
-              <div className="list-item">JavaScript</div>
-              <div className="list-item">GraphQL</div>
-              <div className="list-item">Apollo Client</div>
-              <div className="list-item">Next.js</div>
-              <div className="list-item">Material UI</div>
-              <div className="list-item">Jest</div>
-              <div className="list-item">Playwright</div>
-              <div className="list-item">Node.js</div>
-              <div className="list-item">SQL</div>
-              <div className="list-item">Jira</div>
-              <div className="list-item">Postman</div>
-              <div className="list-item">Git</div>
-            </div>
-          </Grid>
+      <div className="resume-columns">
+        <div className="skills" id="technical-skills">
+          <h3>Technical Skills</h3>
+          <div className="list-item">React.js</div>
+          <div className="list-item">TypeScript</div>
+          <div className="list-item">JavaScript</div>
+          <div className="list-item">Flutter</div>
+          <div className="list-item">GraphQL</div>
+          <div className="list-item">Apollo Client</div>
+          <div className="list-item">Next.js</div>
+          <div className="list-item">Material UI</div>
+          <div className="list-item">Jest</div>
+          <div className="list-item">Playwright</div>
+          <div className="list-item">Node.js</div>
+          <div className="list-item">Dart</div>
+          <div className="list-item">SQL</div>
+          <div className="list-item">Jira</div>
+          <div className="list-item">Postman</div>
+          <div className="list-item">Git</div>
+        </div>
 
-          <Grid item xs={12} md={4} className="centered-grid-item">
-            <div className="resume-image">
-              <img src={resumeScreenshot} alt="resume"></img>
-              <div className="resume-link">
-                <a
-                  href={portfolioResume}
-                  target="_blank"
-                  className="resume-link"
-                  rel="noopener noreferrer"
-                >
-                  Download Resume Here
-                </a>
-              </div>
-            </div>
-          </Grid>
-          <Grid
-  item
-  xs={12}
-  md={4}
-  display="flex"
-  justifyContent="center"
->
-            <div className="skills" id="soft-skills">
-              <h3>Other Strengths</h3>
-              <div className="list-item">Adaptable</div>
-              <div className="list-item">Customer-Focused</div>
-              <div className="list-item">Self-Motivated</div>
-              <div className="list-item">Quick Learner</div>
-              <div className="list-item">Collaborative</div>
-              <div className="list-item">Team Player</div>
-              <div className="list-item">Leadership Experience</div>
-              <div className="list-item">Growth Mindset</div>
-              <div className="list-item">Thoughtful</div>
-            </div>
-          </Grid>
-        </Grid>
+        <div className="resume-image">
+          <img src={resumeScreenshot} alt="resume" />
+          <div className="resume-link">
+            <a
+              href={portfolioResume}
+              target="_blank"
+              className="resume-link"
+              rel="noopener noreferrer"
+            >
+              Download Resume Here
+            </a>
+          </div>
+        </div>
+
+        <div className="skills" id="soft-skills">
+          <h3>Other Strengths</h3>
+          <div className="list-item">Adaptable</div>
+          <div className="list-item">Customer-Focused</div>
+          <div className="list-item">Self-Motivated</div>
+          <div className="list-item">Quick Learner</div>
+          <div className="list-item">Collaborative</div>
+          <div className="list-item">Team Player</div>
+          <div className="list-item">Leadership Experience</div>
+          <div className="list-item">Growth Mindset</div>
+        </div>
       </div>
     </div>
   );

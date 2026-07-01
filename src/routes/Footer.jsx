@@ -4,7 +4,6 @@ import "../styles/Footer.css";
 function Footer() {
   return (
     <footer id="footer">
-      <h4 className="lets-connect"> Let's Connect!</h4>
       <Grid
         container
         className="grid-container"

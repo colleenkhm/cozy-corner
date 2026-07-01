@@ -71,3 +71,23 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
+
+.project-card-tag {
+  display: block;
+  margin-top: auto;
+  padding-top: 10px;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  font-size: 0.65rem;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.04em;
+}
+
+.project-card-tag--personal {
+  color: var(--color-accent);
+}
+
+.project-card-tag--professional {
+  color: var(--color-text-secondary);
+}

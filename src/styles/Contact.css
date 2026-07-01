@@ -1,104 +1,61 @@
-/* Contact.css */
-.ContactForm {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 99%;
+.contact-section {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 20px 64px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .formRow {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  gap: 16px;
 }
 
 .col-6 {
-  width: calc(50% - 20px);
-  max-width: 600px;
-  padding: 5px;
-}
-
-.col-6:last-child {
-  margin-right: 0;
-}
-
-.col-4 {
-  width: 100%;
-  padding: 5px;
+  flex: 1 1 200px;
+  min-width: 0;
 }
 
 .col-12 {
   width: 100%;
-  padding: 5px;
 }
 
 .formInput {
   width: 100%;
   padding: 12px 14px;
-  border: 1px solid rgba(46, 43, 36, 0.15);
-  border-radius: 8px;
+  border: 2px solid var(--color-text-primary);
+  border-radius: var(--radius);
   background-color: var(--color-card-bg);
+  font-family: "Space Mono", monospace;
+  font-size: 0.9rem;
+  color: var(--color-text-primary);
+  box-sizing: border-box;
   transition:
-    border-color var(--transition-base),
     box-shadow var(--transition-base);
 }
 
 .formInput:focus {
   outline: none;
-  border-color: var(--color-heading);
-  box-shadow: 0 0 0 3px rgba(79, 111, 82, 0.18);
-}
-
-.formInput::placeholder {
-  font-family: inherit !important;
-  font-size: inherit !important;
-  opacity: 0.7;
-}
-
-.submit-btn {
-  background-color: var(--color-heading);
-  color: var(--color-bg);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  width: 40%;
-  margin-top: 20px;
-  margin-left: 15px;
-  font-weight: 600;
-  transition:
-    background-color var(--transition-base),
-    transform var(--transition-base),
-    box-shadow var(--transition-base);
-}
-
-.submit-btn:hover {
-  background-color: var(--color-heading-dark);
-  transform: translateY(-2px);
   box-shadow: var(--shadow-soft);
 }
 
-.submit-btn:active {
-  transform: translateY(0);
+.formInput::placeholder {
+  font-family: inherit;
+  font-size: inherit;
+  opacity: 0.5;
+}
+
+.contact-submit {
+  margin-top: 8px;
 }
 
 .errorMessage {
+  display: block;
+  margin-top: 4px;
+  font-family: "Space Mono", monospace;
+  font-size: 0.75rem;
   color: var(--color-accent);
-  font-size: 14px;
-}
-
-/* Adjust the form layout for smaller screens */
-@media (max-width: 768px) {
-  .formRow {
-    display: block;
-    flex-direction: column;
-  }
-
-  .col-4 {
-    width: 100%;
-    margin-bottom: 10px;
-    margin-right: 0;
-  }
+  text-align: left;
 }

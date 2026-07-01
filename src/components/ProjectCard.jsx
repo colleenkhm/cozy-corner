@@ -1,6 +1,6 @@
 import "../styles/ProjectCard.css";
 
-function ProjectCard({ title, tech, description, image, href, alt }) {
+function ProjectCard({ title, tech, description, tag, image, href, alt }) {
   return (
     <a
       className="project-card"
@@ -14,6 +14,11 @@ function ProjectCard({ title, tech, description, image, href, alt }) {
         <h4>{title}</h4>
         <p className="project-card-description">{description}</p>
         <p className="project-card-tech">{tech}</p>
+        {tag && (
+          <span className={`project-card-tag project-card-tag--${tag}`}>
+            {tag}
+          </span>
+        )}
       </div>
     </a>
   );

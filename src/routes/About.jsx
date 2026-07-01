@@ -14,23 +14,23 @@ function About() {
         <div className="about-photos">
           <figure className="clipping about-photo about-photo-1">
             <img src={cliffsOfMoher} alt="Colleen at the Cliffs of Moher" />
-            <figcaption>Cliffs of Moher, Ireland &mdash; where I've been recently</figcaption>
+            <figcaption>Cliffs of Moher, Ireland</figcaption>
           </figure>
 
           <figure className="clipping about-photo about-photo-2">
             <img src={portland} alt="Forest in Portland" />
-            <figcaption>Portland, OR &mdash; where I'm from</figcaption>
+            <figcaption>Portland, OR (hometown)</figcaption>
           </figure>
         </div>
 
         <div className="about-text">
           <p className="bio">
-            Hi! I’m Colleen, a software engineer with 4+ years of experience
+            Hi! I’m Colleen, a developer with 4+ years of experience
             building e-commerce applications for a global audience using
             React, TypeScript, and GraphQL. Before transitioning into tech, I
             studied linguistics at Lawrence University, volunteered
             full-time on an Emergency Response Team through AmeriCorps, and
-            spent lots of time working in the service industry. I was drawn
+            spent many years in the service industry. I was drawn
             to programming because it combines many of the things I care
             about most: language, creativity, and problem-solving. I enjoy
             building thoughtful, user-centered experiences and am especially
@@ -53,12 +53,12 @@ function About() {
         <div className="about-photos">
           <figure className="clipping about-photo about-photo-4">
             <img src={lawrence} alt="Lawrence University campus" />
-            <figcaption>Appleton, WI &mdash; where I went to school</figcaption>
+            <figcaption>Appleton, WI (college)</figcaption>
           </figure>
 
           <figure className="clipping about-photo about-photo-3">
             <img src={stLouis} alt="St. Louis Gateway Arch at sunset" />
-            <figcaption>Saint Louis, MO &mdash; where I live now</figcaption>
+            <figcaption>St. Louis, MO (current)</figcaption>
           </figure>
         </div>
       </div>

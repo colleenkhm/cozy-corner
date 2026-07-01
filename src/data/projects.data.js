@@ -11,6 +11,7 @@ const projects = [
     tech: "Flutter/Dart",
     description:
       "A late-night corner of the internet for aimless, cozy exploring.",
+    tag: "personal",
     image: nightGlowImg,
     href: "https://nightglow.studio",
     alt: "Night Glow Studio screenshot"
@@ -20,14 +21,16 @@ const projects = [
     tech: "React/MUI",
     description:
       "A tool that helps musicians narrow down what key a song might be in.",
+    tag: "personal",
     image: scalerImg,
     href: "https://colleenkhm.github.io/scaler/",
     alt: "Scaler App screenshots"
   },
   {
     title: 'Just A Word',
-    tech: 'Flutter/Dart',
+    tech: 'Flutter/Dart/Mobile',
     description: "A quick, no-frills word lookup utilizing the Free Dictionary API.",
+    tag: "personal",
     image: jawImg,
     href: 'http://www.just-a-word.com/',
     alt: 'Just A Word screenshot',
@@ -37,6 +40,7 @@ const projects = [
     tech: "React/TypeScript/GraphQL",
     description:
       "Global e-commerce platform for one of the world's largest life science suppliers.",
+    tag: "professional",
     image: sigmaImg,
     href: "https://www.sigmaaldrich.com/US/en",
     alt: "Sigma Aldrich screenshot",
@@ -46,15 +50,17 @@ const projects = [
     tech: "React/UX Design/AWS",
     description:
       "An inventory search system for clinical cannabis data, built from the ground up.",
+    tag: "professional",
     image: abideImg,
     href: "https://www.abideassay.com",
     alt: "Abide Assay screenshot",
   },
   {
     title: "MO Gas Tax Back",
-    tech: "React/Ionic/AWS",
+    tech: "React/Ionic/AWS/Mobile",
     description:
       "Helps Missouri drivers claim gas tax refunds straight from a snapped receipt.",
+    tag: "professional",
     image: gasTaxImg,
     href: "https://apps.apple.com/us/app/mo-gas-tax-back/",
     alt: "MO Gas Tax Back screenshot",

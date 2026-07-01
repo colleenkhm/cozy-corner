@@ -7,7 +7,7 @@ header {
   top: 0;
   z-index: 20;
   padding: 20px 30px 16px;
-  margin-bottom: 60px;
+  margin-bottom: 48px;
   background-color: var(--color-bg);
   border-bottom: 3px solid var(--color-text-primary);
 }
@@ -60,6 +60,7 @@ nav .headerLink.active {
     align-items: center;
     gap: 10px;
     padding: 16px 16px 14px;
+    margin-bottom: 28px;
   }
 
   h1 {

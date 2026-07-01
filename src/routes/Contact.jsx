@@ -47,94 +47,86 @@ export default function Contact() {
   };
 
   return (
-    <div className="ContactForm">
-      <div className="container">
-        <div className="row">
-          <div className="col-12 text-center">
-            <form onSubmit={handleSubmit(onSubmit)} noValidate>
-              <div className="formRow">
-                <div className="col-6">
-                  <input
-                    type="text"
-                    {...register("name", {
-                      required: "Please enter your name",
-                      maxLength: { value: 30, message: "Max 30 characters" },
-                    })}
-                    className="form-control formInput"
-                    placeholder="Name"
-                  />
-                  {errors.name && (
-                    <span className="errorMessage">{errors.name.message}</span>
-                  )}
-                </div>
-                <div className="col-6">
-                  <input
-                    type="email"
-                    {...register("email", {
-                      required: "Please enter your email",
-                      pattern: {
-                        value:
-                          /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-                        message: "Invalid email address",
-                      },
-                    })}
-                    className="form-control formInput"
-                    placeholder="Email address"
-                  />
-                  {errors.email && (
-                    <span className="errorMessage">{errors.email.message}</span>
-                  )}
-                </div>
-              </div>
+    <div className="contact-section">
+      <h2>Get In Touch</h2>
 
-              <div className="formRow">
-                <div className="col-12">
-                  <input
-                    type="text"
-                    {...register("subject", {
-                      required: "Please enter a subject",
-                      maxLength: { value: 75, message: "Max 75 characters" },
-                    })}
-                    className="form-control formInput"
-                    placeholder="Subject"
-                  />
-                  {errors.subject && (
-                    <span className="errorMessage">
-                      {errors.subject.message}
-                    </span>
-                  )}
-                </div>
-              </div>
-
-              <div className="formRow">
-                <div className="col-12">
-                  <textarea
-                    rows={5}
-                    {...register("message", {
-                      required: "Please enter a message",
-                    })}
-                    className="form-control formInput"
-                    placeholder="Message"
-                  />
-                  {errors.message && (
-                    <span className="errorMessage">
-                      {errors.message.message}
-                    </span>
-                  )}
-                </div>
-              </div>
-
-              <button
-                className="submit-btn"
-                type="submit"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? "Sending..." : "Submit"}
-              </button>
-            </form>
+      <form onSubmit={handleSubmit(onSubmit)} noValidate>
+        <div className="formRow">
+          <div className="col-6">
+            <input
+              type="text"
+              {...register("name", {
+                required: "Please enter your name",
+                maxLength: { value: 30, message: "Max 30 characters" },
+              })}
+              className="formInput"
+              placeholder="Name"
+            />
+            {errors.name && (
+              <span className="errorMessage">{errors.name.message}</span>
+            )}
+          </div>
+          <div className="col-6">
+            <input
+              type="email"
+              {...register("email", {
+                required: "Please enter your email",
+                pattern: {
+                  value:
+                    /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                  message: "Invalid email address",
+                },
+              })}
+              className="formInput"
+              placeholder="Email address"
+            />
+            {errors.email && (
+              <span className="errorMessage">{errors.email.message}</span>
+            )}
           </div>
         </div>
-      </div>
+
+        <div className="formRow">
+          <div className="col-12">
+            <input
+              type="text"
+              {...register("subject", {
+                required: "Please enter a subject",
+                maxLength: { value: 75, message: "Max 75 characters" },
+              })}
+              className="formInput"
+              placeholder="Subject"
+            />
+            {errors.subject && (
+              <span className="errorMessage">{errors.subject.message}</span>
+            )}
+          </div>
+        </div>
+
+        <div className="formRow">
+          <div className="col-12">
+            <textarea
+              rows={5}
+              {...register("message", {
+                required: "Please enter a message",
+              })}
+              className="formInput"
+              placeholder="Message"
+            />
+            {errors.message && (
+              <span className="errorMessage">{errors.message.message}</span>
+            )}
+          </div>
+        </div>
+
+        <button
+          className="submit-btn contact-submit"
+          type="submit"
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? "Sending..." : "Submit"}
+        </button>
+      </form>
     </div>
   );
 }

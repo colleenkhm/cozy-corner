@@ -20,8 +20,8 @@ export default function Home() {
           </span>
         </h2>
         <p className="lede">
-          1. software engineer striving to break down communication
-          barriers, improve information accessibility, and inspire creativity
+          1. Software engineer striving to break down communication
+          barriers, improve information accessibility, and inspire creativity.
         </p>
       </div>
 

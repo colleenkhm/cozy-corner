@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0d869677.css",
-    "main.js": "/static/js/main.ca32bc95.js",
+    "main.js": "/static/js/main.debd3fb6.js",
     "static/media/lawrence.jpeg": "/static/media/lawrence.9f760ebda30164bad729.jpeg",
     "static/media/millipore-sigma-screenshot.png": "/static/media/millipore-sigma-screenshot.423567f969575b6628f3.png",
     "static/media/irelandGlen.jpeg": "/static/media/irelandGlen.a3a7d35b83aaa67f197c.jpeg",
@@ -77,10 +77,10 @@
     "static/media/MOGasTaxBack.webp": "/static/media/MOGasTaxBack.6e9f462c163c8b0bfa04.webp",
     "index.html": "/index.html",
     "main.0d869677.css.map": "/static/css/main.0d869677.css.map",
-    "main.ca32bc95.js.map": "/static/js/main.ca32bc95.js.map"
+    "main.debd3fb6.js.map": "/static/js/main.debd3fb6.js.map"
   },
   "entrypoints": [
     "static/css/main.0d869677.css",
-    "static/js/main.ca32bc95.js"
+    "static/js/main.debd3fb6.js"
   ]
 }

@@ -28,7 +28,7 @@ const projects = [
   },
   {
     title: 'Just A Word',
-    tech: 'Flutter/Dart/Mobile',
+    tech: 'Flutter/Dart',
     description: "A quick, no-frills word lookup utilizing the Free Dictionary API.",
     tag: "personal",
     image: jawImg,
@@ -37,7 +37,7 @@ const projects = [
   },
   {
     title: "Sigma Aldrich",
-    tech: "React/TypeScript/GraphQL",
+    tech: "React/TypeScript/GraphQL/Agile",
     description:
       "Global e-commerce platform for one of the world's largest life science suppliers.",
     tag: "professional",

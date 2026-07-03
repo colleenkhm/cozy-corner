@@ -46,8 +46,8 @@ function Resume() {
           <span className="skill-cell">Quick Learner</span>
           <span className="skill-cell">Collaborative</span>
           <span className="skill-cell">Team Player</span>
-          <span className="skill-cell">Leadership Experience</span>
-          <span className="skill-cell">Growth Mindset</span>
+          <span className="skill-cell">Experienced Leader</span>
+          <span className="skill-cell">Growth-Minded</span>
         </div>
       </div>
     </div>

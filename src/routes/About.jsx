@@ -14,12 +14,12 @@ function About() {
         <div className="about-photos">
           <figure className="clipping about-photo about-photo-1">
             <img src={cliffsOfMoher} alt="Colleen at the Cliffs of Moher" />
-            <figcaption>Cliffs of Moher, Ireland</figcaption>
+            <figcaption>Cliffs of Moher, Ireland (the motherland)</figcaption>
           </figure>
 
           <figure className="clipping about-photo about-photo-2">
             <img src={portland} alt="Forest in Portland" />
-            <figcaption>Portland, OR (hometown)</figcaption>
+            <figcaption>Portland, Oregon (my hometown)</figcaption>
           </figure>
         </div>
 
@@ -53,12 +53,12 @@ function About() {
         <div className="about-photos">
           <figure className="clipping about-photo about-photo-4">
             <img src={lawrence} alt="Lawrence University campus" />
-            <figcaption>Appleton, WI (college)</figcaption>
+            <figcaption>Appleton, Wisconsin (my college town)</figcaption>
           </figure>
 
           <figure className="clipping about-photo about-photo-3">
             <img src={stLouis} alt="St. Louis Gateway Arch at sunset" />
-            <figcaption>St. Louis, MO (current)</figcaption>
+            <figcaption>St. Louis, Missouri (where I live now)</figcaption>
           </figure>
         </div>
       </div>

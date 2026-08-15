@@ -1,3 +1,7 @@
+#footer {
+  background-color: var(--color-footer-bg);
+}
+
 .grid-container {
   padding: 16px 60px;
 }

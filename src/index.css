@@ -1,15 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Space+Mono:wght@400;700&display=swap");
 
 :root {
-  --color-bg: #f7f4ed;
+  --color-bg: #d7e5ee;
   --color-text-primary: #161616;
   --color-text-secondary: #44423c;
+  --color-header-bg: #f3effb;
+  --color-footer-bg: #effbf5;
 
   --color-heading: #111111;
   --color-heading-dark: #000000;
   --color-accent: #1d4e89;
-  --color-accent-light: #2f6fb3;
-  --color-accent-blue: #e4e0d2;
+  --color-accent-light: #7ab3ef;
+  --color-accent-blue: #d2dce4;
 
   --color-card-bg: #ffffff;
   --color-card-text: #161616;
